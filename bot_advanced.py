@@ -86,7 +86,6 @@ def init_engine():
 
     index = build_sentence_window_index(
         [document],
-        # llm=Ollama(model="llama3", request_timeout=120.0, base_url="http://92.53.65.80:8001"),
         llm=Ollama(model="llama3", request_timeout=120.0, base_url="http://127.0.0.1:11434"),
         save_dir="./sentence_index",
     )
